@@ -16,79 +16,124 @@ def ex1():
 def ex2():
     import numpy as np
     import matplotlib.pyplot as plt
-    c1 = []
-    c2 = []
-    c3 = []
+    currency1 = []
+    currency2 = []
+    currency3 = []
     date = []
     d = 1
     with open('ex2.txt') as ff:
         for item in ff:
             date.append(d)
             a, b, c = item.split()
-            c1.append(float(a))
-            c2.append(float(b))
-            c3.append(float(c))
+            currency1.append(float(a))
+            currency2.append(float(b))
+            currency3.append(float(c))
             d += 1
-    plt.plot(date, c1, date, c2, date, c3)
+    plt.plot(date, currency1, date, currency2, date, currency3)
     plt.show()
 
 
 def ex3():
-    import numpy as np
     import matplotlib.pyplot as plt
-    c1 = []
-    c2 = []
-    c3 = []
+    currency1 = []
+    currency2 = []
+    currency3 = []
     date = []
     d = 1
     with open('ex2.txt') as ff:
         for item in ff:
             date.append(d)
             a, b, c = item.split()
-            c1.append(float(a))
-            c2.append(float(b))
-            c3.append(float(c))
+            currency1.append(float(a))
+            currency2.append(float(b))
+            currency3.append(float(c))
             d += 1
-    plt.plot(date, c1, date, c2, date, c3)
-    plt.show()
-
-    import numpy as np
-    import matplotlib.pyplot as plt
-    x = np.arange(-10, 10.01, 0.01)
-    plt.plot(x, np.sin(x), x, np.cos(x), x, -x)
+    plt.plot(date, currency1, date, currency2, date, currency3)
     plt.xlabel(r'$date$')
-    plt.ylabel(r'$course$')
-    plt.title(r'$f_1(x)=\sin(x),\ f_2(x)=\cos(x),\ f_3(x)=-x$')
+    plt.ylabel(r'$currency$')
+    plt.title(r'$f_1(date)=currency1(date),\ f_2(date)=currency2(date),\ f_3(date)=currency3(date)$')
     plt.grid(True)
     plt.show()
 
 
 def ex4():
-    print()
+    import matplotlib.pyplot as plt
+    currency1 = []
+    currency2 = []
+    currency3 = []
+    date = []
+    d = 1
+    with open('ex2.txt') as ff:
+        for item in ff:
+            date.append(d)
+            a, b, c = item.split()
+            currency1.append(float(a))
+            currency2.append(float(b))
+            currency3.append(float(c))
+            d += 1
+
+    # subplot 1
+    plt.subplot(221)
+    plt.plot(date, currency1)
+    plt.ylabel(r'$currency$')
+    plt.title(r'$f_1(date)=currency1(date)$')
+    plt.grid(True)
+
+    # subplot 2
+    plt.subplot(222)
+    plt.plot(date, currency2, 'g')
+    plt.ylabel(r'$currency$')
+    plt.title(r'$f_2(date)=currency2(date)$')
+    plt.grid(True)
+
+    # subplot 3
+    plt.subplot(223)
+    plt.plot(date, currency3, 'r')
+    plt.ylabel(r'$currency$')
+    plt.title(r'$f_3(date)=currency3(date)$')
+    plt.grid(True)
+
+    plt.show()
+
 
 def ex5():
     print()
 
+
 def ex6():
     print()
+
 
 def ex7():
     print()
 
+
 def ex8():
     print()
+
 
 def ex9():
     print()
 
+
 def ex10():
     print()
+
 
 def ex11():
     print()
 
+
 def ex12():
-    print()
+    import matplotlib.pyplot as plt
+
+    data = [1036.4, 1500]
+    plt.figure(num=1, figsize=(6, 6))
+    plt.axes(aspect=1)
+    plt.title('Diagram', size=15)
+    plt.pie(data, labels=('USD/RUB', 'EUR/RUB'))
+    plt.show()
+
 
 def ex13():
     print()
