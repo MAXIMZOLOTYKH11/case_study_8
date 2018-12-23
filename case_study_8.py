@@ -1,5 +1,4 @@
 def ex1():
-    import numpy as np
     import matplotlib.pyplot as plt
     cy = []
     date = []
@@ -14,7 +13,6 @@ def ex1():
 
 
 def ex2():
-    import numpy as np
     import matplotlib.pyplot as plt
     currency1 = []
     currency2 = []
