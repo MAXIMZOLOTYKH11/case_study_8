@@ -95,7 +95,268 @@ def ex4():
 
 
 def ex5():
-    print()
+    with open('ex3.txt', 'r') as f:
+        text = f.readlines()
+        e = 0
+        mon = []
+        mon1 = []
+        suma = 0
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '01':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '02':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '03':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '04':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '04':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '05':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '06':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '07':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '08':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '09':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '10':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '11':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '12':
+                e += 1
+                suma += float(a[1])
+        average = suma / e
+        mon.append(average)
+
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '01':
+                e1 += 1
+                suma += float(a[2])
+        average = suma / e1
+        mon1.append(average)
+
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '02':
+                e1 += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '03':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '04':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '04':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '05':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '06':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '07':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '08':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '09':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '10':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '11':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        for item in text:
+            a = list(item.split())
+
+            if a[0][3:5] == '12':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
+        mon1.append(average)
+
+        print(mon)
+        print(mon1)
 
 
 def ex6():
