@@ -95,6 +95,8 @@ def ex4():
 
 
 def ex5():
+    import matplotlib.pyplot as plt
+    import numpy as np
     with open('ex3.txt', 'r') as f:
         text = f.readlines()
         e = 0
@@ -240,22 +242,41 @@ def ex5():
         average = suma / e
         mon.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = item.split()
             if a[0][3:5] == '01':
-                e1 += 1
+                e += 1
                 suma += float(a[2])
-        average = suma / e1
+        average = suma / e
+        mon1.append(average)
+
+        e = 0
+        suma = 0
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '02':
+                e += 1
+
+        for item in text:
+            a = item.split()
+            if a[0][3:5] == '01':
+                e += 1
+                suma += float(a[2])
+        average = suma / e
         mon1.append(average)
 
         for item in text:
             a = item.split()
             if a[0][3:5] == '02':
-                e1 += 1
+                e += 1
                 suma += float(a[2])
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -265,6 +286,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -274,6 +297,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -283,6 +308,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -292,6 +319,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -301,6 +330,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -310,6 +341,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -319,6 +352,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -327,6 +362,9 @@ def ex5():
                 suma += float(a[2])
         average = suma / e
         mon1.append(average)
+
+        e = 0
+        suma = 0
 
         for item in text:
             a = list(item.split())
@@ -337,6 +375,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -346,6 +386,8 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
+        e = 0
+        suma = 0
         for item in text:
             a = list(item.split())
 
@@ -355,9 +397,12 @@ def ex5():
         average = suma / e
         mon1.append(average)
 
-        print(mon)
-        print(mon1)
-
+        for i in mon:
+            plt.subplot(111, polar=True)
+            phi = np.arange(0, i * np.pi, 0.01)
+            rho = 2 * phi
+            plt.plot(phi, rho, lw=1)
+        plt.show()
 
 def ex6():
     print()
